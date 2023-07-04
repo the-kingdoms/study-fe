@@ -1,6 +1,8 @@
 import "./button.css";
 import "./default.css";
 import "./Main.css";
+import Input from "./Input";
+import Button from "./Button";
 const ClonePage = () => {
   return (
     <div>
@@ -18,27 +20,11 @@ const ClonePage = () => {
             <div className="logIn">
               <div className="logo mb-30px cursor-pointer">𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶</div>
               <div>
-                <input
-                  type="text"
-                  className="input-box"
-                  id="idInput"
-                  placeholder="전화번호, 사용자 이름 또는 이메일"
-                ></input>
-                <input
-                  type="password"
-                  className="input-box"
-                  id="pwInput"
-                  placeholder="비밀번호"
-                ></input>
-                <button
-                  id="loginButton"
-                  className="mt-10px login-button button-basic"
-                >
-                  로그인
-                </button>
+                <Input />
+                <Button />
                 <div className="row mt-20px">
                   <div className="line"></div>
-                  <div className="or">또는</div>
+                  <div className="or-text">또는</div>
                   <div className="line"></div>
                 </div>
                 <div className="cursor-pointer login-facebook ">
@@ -46,13 +32,13 @@ const ClonePage = () => {
                   Facebook으로 로그인
                 </div>
               </div>
-              <div className="cursor-pointer mt-20px lost-password ">
+              <div className="cursor-pointer mt-20px lost-password-button ">
                 비밀번호를 잊으셨나요?
               </div>
             </div>
-            <div className="signIn">
+            <div className="signIn-container">
               <span>계정이 없으신가요?</span>
-              <button className="signin-button button-basic">가입하기</button>
+              <button className="signIn-button button-basic">가입하기</button>
             </div>
 
             <div className="download-app">앱을 다운로드하세요.</div>

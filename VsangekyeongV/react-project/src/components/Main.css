@@ -45,7 +45,7 @@
   color: black;
 }
 
-.signIn {
+.signIn-container {
   width: 350px;
   height: 62.6px;
   margin: 0px 0px 10px;
@@ -68,14 +68,7 @@
 .cursor-pointer {
   cursor: pointer;
 }
-.lost-password {
-  font-size: 13px;
-  color: rgb(0, 0, 122);
-}
-.login-facebook {
-  color: rgb(0, 0, 122);
-  font-weight: bold;
-}
+
 .logo-facebook {
   height: 16px;
   width: 16px;
@@ -98,7 +91,7 @@
   z-index: 1;
 }
 
-.or {
+.or-text {
   font-size: 13px;
   font-weight: bold;
   color: rgb(71, 71, 71);
