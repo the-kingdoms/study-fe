@@ -1,8 +1,11 @@
 import { useState, ChangeEvent } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 const LoginForm = () => {
   const [buttonEnabled, setButtonEnabled] = useState(false);
   const [inputID, setInputID] = useState("");
   const [inputPW, setInputPW] = useState("");
+  const navigate = useNavigate();
 
   const inputPWHandler = (e: ChangeEvent<HTMLInputElement>) => {
     buttonEnabledHandler();
@@ -21,7 +24,8 @@ const LoginForm = () => {
     setInputID("");
     setInputPW("");
     alert("id : " + inputID + "\npw: " + inputPW);
-    window.location.href = "https://www.google.com";
+    // window.location.href = "https://www.google.com";
+    navigate("/main");
   };
   return (
     <div>
