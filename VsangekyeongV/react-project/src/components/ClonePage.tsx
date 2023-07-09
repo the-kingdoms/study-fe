@@ -1,8 +1,7 @@
+import "./Main.css";
 import "./button.css";
 import "./default.css";
-import "./Main.css";
-import Input from "./Input";
-import Button from "./Button";
+import LoginForm from "./LoginForm";
 const ClonePage = () => {
   return (
     <div>
@@ -20,11 +19,10 @@ const ClonePage = () => {
             <div className="logIn">
               <div className="logo mb-30px cursor-pointer">𝓘𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶</div>
               <div>
-                <Input />
-                <Button />
+                <LoginForm />
                 <div className="row mt-20px">
                   <div className="line"></div>
-                  <div className="or-text">또는</div>
+                  <div className="or">또는</div>
                   <div className="line"></div>
                 </div>
                 <div className="cursor-pointer login-facebook ">
@@ -32,11 +30,11 @@ const ClonePage = () => {
                   Facebook으로 로그인
                 </div>
               </div>
-              <div className="cursor-pointer mt-20px lost-password-button ">
+              <div className="cursor-pointer mt-20px lost-password ">
                 비밀번호를 잊으셨나요?
               </div>
             </div>
-            <div className="signIn-container">
+            <div className="signIn">
               <span>계정이 없으신가요?</span>
               <button className="signIn-button button-basic">가입하기</button>
             </div>
@@ -60,10 +58,8 @@ const ClonePage = () => {
             </div>
           </div>
         </body>
-        <script src="./FW.js"></script>
       </html>
     </div>
   );
 };
-
 export default ClonePage;
