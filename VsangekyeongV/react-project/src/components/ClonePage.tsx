@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./ClonePageMain.css";
 import "./button.css";
 import "./default.css";
 import LoginForm from "./LoginForm";

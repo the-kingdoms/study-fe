@@ -1,35 +1,9 @@
-.head {
-  width: 100%;
-  height: 20px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 581.15px;
-  background-color: #fff;
-}
-
 .logo {
   font-size: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer buttons {
-  font-size: 14px;
 }
 
 .logIn {
@@ -71,7 +45,7 @@ body {
   color: black;
 }
 
-.signIn {
+.signIn-container {
   width: 350px;
   height: 62.6px;
   margin: 0px 0px 10px;
@@ -91,82 +65,21 @@ body {
   margin: 10px 10px 10px 10px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.margin-10px {
-  margin-top: 10px;
-}
-
-.margin-30px {
-  margin-bottom: 30px;
-}
-
-.login-button {
-  width: 268.4px;
-  height: 32px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: rgb(50, 185, 239);
-  color: #fff;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-left: 42px;
-}
-
-.signin-button {
-  color: rgb(0, 114, 159);
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-  background-color: #fff;
-  font-weight: bold;
-}
-.col {
-  display: flex;
-}
 .cursor-pointer {
   cursor: pointer;
 }
-.lost-password {
-  font-size: 13px;
-  color: rgb(0, 0, 122);
-}
-.login-facebook {
-  color: rgb(0, 0, 122);
-  font-weight: bold;
-}
+
 .logo-facebook {
   height: 16px;
   width: 16px;
 }
-.margin-20px {
-  margin-top: 20px;
-}
+
 .download-app {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.download-button-1 {
-  width: 134.28px;
-  height: 40px;
-}
-.download-button-2 {
-  width: 110.76px;
-  height: 40px;
-
-  margin-left: 10px;
-}
 .download {
   display: flex;
   flex-direction: row;
@@ -178,11 +91,15 @@ body {
   z-index: 1;
 }
 
-.or {
+.or-text {
   font-size: 13px;
   font-weight: bold;
   color: rgb(71, 71, 71);
 }
-.padding-left-10px {
-  padding-left: 10px;
+
+.disabled {
+  background-color: gray;
+}
+.enabled {
+  background-color: rgb(50, 185, 239);
 }
