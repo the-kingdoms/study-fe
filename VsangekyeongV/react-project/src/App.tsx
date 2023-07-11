@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router";
 import ClonePage from "./components/ClonePage";
-import Main from "./components/Main";
+import Main from "./components/Main/Main";
 import "./App.css";
 
 function App() {

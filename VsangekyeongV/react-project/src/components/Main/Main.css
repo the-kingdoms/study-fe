@@ -1,0 +1,61 @@
+.dis-row {
+  display: flex;
+  flex-direction: row;
+}
+.dis-col {
+  display: flex;
+  flex-direction: column;
+}
+.dis-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dis-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 1920px;
+  height: 1080px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-logoPage {
+  width: 500px;
+  height: 1080px;
+  background-color: red;
+}
+.main-container {
+  width: 1420px;
+  height: 100%;
+  background-color: blanchedalmond;
+}
+.main-container-name {
+  width: 1300px;
+  height: 50px;
+  background-color: blue;
+}
+.main-container-table {
+  width: 1300px;
+  height: 800px;
+  background-color: blueviolet;
+  display: flex;
+  margin-top: 50px;
+}
+.main-container-table-bar {
+  width: 1300px;
+  height: 100px;
+  background-color: brown;
+}
+.main-container-table-source {
+  width: 1300px;
+  height: 700px;
+  background-color: chartreuse;
+}
