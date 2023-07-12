@@ -1,3 +1,4 @@
+import { NoticeCardInterface } from "@/types/NoticeCardInterface";
 import "./Main.css";
 import NoticeCard from "./NoticeCard";
 
@@ -15,13 +16,7 @@ const Main = () => {
     "소리 없는 외침: 사랑과 갈등이 교차하는 이야기",
   ];
   const makePost = () => {
-    const posts: {
-      num: number;
-      postTitle: string;
-      user: string;
-      date: string;
-      commentNum: number;
-    }[] = [];
+    const posts: NoticeCardInterface[] = [];
     for (let i = 0; i < 10; i++) {
       const post = {
         num: i,
@@ -32,7 +27,7 @@ const Main = () => {
       };
       posts.push(post);
     }
-    return posts.map((post) => <NoticeCard post={post} />);
+    return posts.map((post) => <NoticeCard {...post} />);
   };
 
   return (
