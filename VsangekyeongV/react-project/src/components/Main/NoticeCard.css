@@ -1,0 +1,26 @@
+.notice-card {
+  width: 1300px;
+  height: 70px;
+  border-bottom: 1px solid black;
+  background-color: #fff;
+}
+.card-num {
+  width: 100px;
+  height: 70px;
+}
+.card-title {
+  width: 800px;
+  height: 70px;
+}
+.card-user {
+  width: 100px;
+  height: 70px;
+}
+.card-date {
+  width: 200px;
+  height: 70px;
+}
+.card-commentNum {
+  width: 100px;
+  height: 70px;
+}

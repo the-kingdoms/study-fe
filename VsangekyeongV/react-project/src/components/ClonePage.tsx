@@ -1,3 +1,4 @@
+import React from "react";
 import "./ClonePageMain.css";
 import "./button.css";
 import "./default.css";
