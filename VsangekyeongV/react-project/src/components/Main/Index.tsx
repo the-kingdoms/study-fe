@@ -29,9 +29,9 @@ const Main = () => {
       };
       posts.push(post);
     }
-    return posts.map((post) => <NoticeCard {...post} />);
+    return posts;
   };
-
+  const posts = makePost();
   return (
     <div className="main">
       <div className="main-logoPage">
@@ -47,7 +47,11 @@ const Main = () => {
             <div className="card-date dis-col-center">작성일</div>
             <div className="card-commentNum dis-col-center">댓글수</div>
           </div>
-          <div className="main-container-table-source">{makePost()}</div>
+          <div className="main-container-table-source">
+            {posts.map((post, index) => (
+              <NoticeCard key={index} {...post} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
