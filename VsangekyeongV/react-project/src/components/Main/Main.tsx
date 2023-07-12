@@ -1,6 +1,8 @@
+import React from "react";
 import { NoticeCardInterface } from "@/types/NoticeCardInterface";
 import "./Main.css";
 import NoticeCard from "./NoticeCard";
+import "./NoticeCard.css";
 
 const Main = () => {
   const title = [
@@ -17,10 +19,10 @@ const Main = () => {
   ];
   const makePost = () => {
     const posts: NoticeCardInterface[] = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 11; i++) {
       const post = {
         num: i,
-        postTitle: title[i],
+        postTitle: title[i - 1],
         user: `unknown${i}`,
         date: `2023/6/${i}`,
         commentNum: Math.floor(Math.random() * 100) + 1,
@@ -32,12 +34,20 @@ const Main = () => {
 
   return (
     <div className="main">
-      <div className="main-logoPage"></div>
+      <div className="main-logoPage">
+        <img src="img/lion.jpg" className="main-logoPage-logo"></img>
+      </div>
       <div className="main-container dis-col-center">
-        <div className="main-container-name "></div>
+        <div className="main-container-name ">게시글 목록</div>
         <div className="main-container-table dis-col">
-          <div className="main-container-table-bar"></div>
-          <div className="main-container-table-source" {...makePost()}></div>
+          <div className="dis-row-center main-container-table-bar ">
+            <div className="card-num dis-col-center">번호</div>
+            <div className="card-title dis-col-center">제목</div>
+            <div className="card-user dis-col-center">작성자</div>
+            <div className="card-date dis-col-center">작성일</div>
+            <div className="card-commentNum dis-col-center">댓글수</div>
+          </div>
+          <div className="main-container-table-source">{makePost()}</div>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import "./NoticeCard.css";
 import "./Main.css";
 import { NoticeCardInterface } from "@/types/NoticeCardInterface";
