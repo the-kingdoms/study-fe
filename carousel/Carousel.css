@@ -1,0 +1,21 @@
+.CarouselContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.Carousel {
+  width: 300vw;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 61px;
+  background-color: #eaeaea;
+}
+.inner {
+  width: 1060px;
+}
+
+.inner img {
+  width: 1060px;
+  height: 300px;
+}
