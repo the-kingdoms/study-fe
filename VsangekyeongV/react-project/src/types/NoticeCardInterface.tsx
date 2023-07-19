@@ -1,7 +1,9 @@
 export interface NoticeCardInterface {
-  num: number;
-  postTitle: string;
+  id: number;
+  title: string;
   user: string;
   date: string;
   commentNum: number;
+  body: string;
+  userId: number;
 }
